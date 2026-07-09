@@ -88,6 +88,26 @@ export const projectsList: Project[] = [
 
 export const certificationsList: Certification[] = [
   {
+    id: 'claude-code-101',
+    title: 'Claude Code 101',
+    issuer: 'Anthropic',
+    issuedDate: 'Jul 2026',
+    credentialId: '3ozcos8unc6z',
+    credentialUrl: 'https://verify.skilljar.com/c/3ozcos8unc6z',
+    skills: ['Claude Code', 'Anthropic Claude'],
+    logoType: 'generic',
+  },
+  {
+    id: 'claude-101',
+    title: 'Claude 101',
+    issuer: 'Anthropic',
+    issuedDate: 'Jul 2026',
+    credentialId: 'utn3a8dejoj8',
+    credentialUrl: 'https://verify.skilljar.com/c/utn3a8dejoj8',
+    skills: ['Claude Skills', 'Artificial Intelligence (AI)'],
+    logoType: 'generic',
+  },
+  {
     id: 'deloitte-tech',
     title: 'Deloitte Australia - Technology Job Simulation',
     issuer: 'Deloitte (via Forage)',

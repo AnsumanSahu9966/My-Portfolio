@@ -28,7 +28,7 @@ export default function About() {
   const getCategory = (cert: Certification): string => {
     const title = cert.title.toLowerCase();
     const issuer = cert.issuer.toLowerCase();
-    if (title.includes('ai') || title.includes('prompting') || title.includes('llm') || title.includes('workflows') || title.includes('agents')) return 'ai';
+    if (title.includes('ai') || title.includes('prompting') || title.includes('llm') || title.includes('workflows') || title.includes('agents') || title.includes('claude')) return 'ai';
     if (title.includes('cyber') || title.includes('security') || title.includes('networking')) return 'cyber';
     if (issuer.includes('forage') || issuer.includes('simulation') || issuer.includes('datacom')) return 'simulations';
     if (title.includes('nss') || title.includes('participation') || title.includes('codex') || title.includes('acm')) return 'activities';

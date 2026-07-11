@@ -338,7 +338,7 @@ export default function Contact() {
                         Message Transmitted!
                       </h4>
                       <p className="text-xs text-neutral-500 dark:text-neutral-400 max-w-sm mx-auto leading-relaxed">
-                        The simulated mail daemon successfully relayed your query. Real emails are forwarded directly to Ansuman at <span className="font-semibold text-neutral-800 dark:text-neutral-200">ansuman.slplindia@gmail.com</span>. Thank you!
+                        The simulated mail has successfully relayed directly to Ansuman at <span className="font-semibold text-neutral-800 dark:text-neutral-200">ansuman.slplindia@gmail.com</span>.<br />Thank you for contacting!
                       </p>
                     </div>
                     <button

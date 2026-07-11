@@ -748,12 +748,12 @@ function OopShowcaseSimulator() {
       <div className="flex-1 bg-neutral-900/40 p-4.5 rounded-2xl border border-neutral-800 flex flex-col items-center justify-center space-y-4 min-h-[160px]">
         {selectedSub === 'shape' && (
           <div className="space-y-4 w-full">
-            <span className="text-[10px] font-bold text-neutral-450 block text-center">Polymorphism: Shape obj = new Circle(radius);</span>
+            <span className="text-[10px] font-bold text-neutral-450 block text-center">Polymorphism: Shape obj = new [ShapeType](...);</span>
             <div className="flex justify-center space-x-4">
               <button
                 onClick={() => {
                   audioController.playTap();
-                  setActionOutput({ speak: 'Shape baseClass = new Circle(7.0);', motion: 'circle.draw() -> ⭕ Rendering a Circle.\ncircle.calculateArea() -> Area = 153.94 sq units.' });
+                  setActionOutput({ speak: 'Shape obj = new Circle(7.0);', motion: 'obj.draw() -> ⭕ Rendering a Circle.\nobj.calculateArea() -> Area = 153.94 sq units.' });
                   setLog('Instantiated Circle class overriding standard draw() and calculateArea() methods.');
                 }}
                 onMouseEnter={() => audioController.playHover()}
@@ -764,7 +764,7 @@ function OopShowcaseSimulator() {
               <button
                 onClick={() => {
                   audioController.playTap();
-                  setActionOutput({ speak: 'Shape baseClass = new Rectangle(5.0, 10.0);', motion: 'rectangle.draw() -> ▭ Rendering a Rectangle.\nrectangle.calculateArea() -> Area = 50.00 sq units.' });
+                  setActionOutput({ speak: 'Shape obj = new Rectangle(5.0, 10.0);', motion: 'obj.draw() -> ▭ Rendering a Rectangle.\nobj.calculateArea() -> Area = 50.00 sq units.' });
                   setLog('Instantiated Rectangle class overriding abstract area calculating methods.');
                 }}
                 onMouseEnter={() => audioController.playHover()}
@@ -778,7 +778,7 @@ function OopShowcaseSimulator() {
 
         {selectedSub === 'duck' && (
           <div className="space-y-4 w-full">
-            <span className="text-[10px] font-bold text-neutral-450 block text-center">Overriding: Duck d = new RubberDuck(); d.performQuack();</span>
+            <span className="text-[10px] font-bold text-neutral-450 block text-center">Overriding: Duck d = new [DuckType](); d.performQuack();</span>
             <div className="flex justify-center space-x-3">
               <button
                 onClick={() => {
@@ -787,7 +787,7 @@ function OopShowcaseSimulator() {
                   setLog('MallardDuck inherits Duck class, overriding standard fly() and quack() behaviors.');
                 }}
                 onMouseEnter={() => audioController.playHover()}
-                className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 text-xxs font-bold text-neutral-300 uppercase cursor-pointer"
+                className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 text-xxs font-bold text-white uppercase cursor-pointer"
               >
                 Mallard Duck
               </button>
@@ -798,7 +798,7 @@ function OopShowcaseSimulator() {
                   setLog('RubberDuck overrides fly() with FlyNoWay behavior, exhibiting loose Strategy Pattern.');
                 }}
                 onMouseEnter={() => audioController.playHover()}
-                className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 text-xxs font-bold text-neutral-300 uppercase cursor-pointer"
+                className="px-3 py-2 rounded-xl border border-neutral-800 bg-neutral-950 hover:bg-neutral-900 text-xxs font-bold text-white uppercase cursor-pointer"
               >
                 Rubber Duck
               </button>
@@ -808,7 +808,7 @@ function OopShowcaseSimulator() {
 
         {selectedSub === 'vehicle' && (
           <div className="space-y-4 w-full">
-            <span className="text-[10px] font-bold text-neutral-450 block text-center">Inheritance: Vehicle v = new TeslaElectricCar();</span>
+            <span className="text-[10px] font-bold text-neutral-450 block text-center">Inheritance: Vehicle v = new [VehicleType]();</span>
             <div className="flex justify-center space-x-3">
               <button
                 onClick={() => {

@@ -44,6 +44,8 @@ export default function Projects() {
         return 'from-zinc-700 to-neutral-800';
       case 'utility':
         return 'from-neutral-600 to-zinc-800';
+      case 'cybersecurity':
+        return 'from-teal-600 to-emerald-800';
       default:
         return 'from-neutral-500 to-neutral-700';
     }
@@ -73,6 +75,7 @@ export default function Projects() {
             { name: 'DSA Toolkits', id: 'dsa' },
             { name: 'OOP Showcases', id: 'showcase' },
             { name: 'Utility Suites', id: 'utility' },
+            { name: 'Cybersecurity Labs', id: 'cybersecurity' },
           ].map((cat) => (
             <button
               key={cat.id}

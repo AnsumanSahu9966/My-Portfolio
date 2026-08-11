@@ -4,7 +4,8 @@ export interface Project {
   technologies: string[];
   description: string;
   skills: string[];
-  category: 'academic' | 'dsa' | 'utility' | 'showcase';
+  category: string;
+  githubUrl?: string;
 }
 
 export interface Certification {

@@ -84,9 +84,36 @@ export const projectsList: Project[] = [
     skills: ['Java', 'Methods Overloading', 'String Parsing', 'Validation Modules', 'Modular Architecture'],
     category: 'utility',
   },
+  {
+    id: 'apexplanet-cyber-lab',
+    title: 'Virtual Cybersecurity Lab Setup',
+    technologies: ['Kali Linux', 'VirtualBox', 'Metasploitable2'],
+    description: 'Built a complete virtual cybersecurity lab environment as part of the ApexPlanet Cybersecurity Internship. Configured isolated host-only networks, practiced essential Linux terminal commands, performed network reconnaissance using Nmap, and captured/analyzed network traffic using Wireshark to understand penetration testing workflows.',
+    skills: ['CyberSecurity', 'Ethical Hacking', 'Nmap', 'Wireshark', 'Burp Suite', 'Linux', 'Networking', 'Penetration Testing'],
+    category: 'cybersecurity',
+  },
 ];
 
 export const certificationsList: Certification[] = [
+  {
+    id: 'nasha-mukt',
+    title: 'Nasha Mukt Yuva for Viksit Bharat',
+    issuer: 'Mera Yuva Bharat - MY Bharat',
+    issuedDate: 'Aug 2026',
+    credentialUrl: 'https://postimg.cc/yDXw3DSq',
+    skills: ['Social Responsibility', 'Community Engagement', 'Volunteering', 'Awareness Raising', 'NSS'],
+    logoType: 'generic',
+  },
+  {
+    id: 'python-internship',
+    title: 'Python Internship (6 Weeks Online Internship)',
+    issuer: 'Skill Nexis',
+    issuedDate: 'Jul 2026',
+    credentialId: 'SNX-00089-26',
+    credentialUrl: 'https://drive.google.com/file/d/10id8cRYM_mlyxjPLSEbzLLcuN_bhqidv/view',
+    skills: ['Python (Programming Language)', 'Object-Oriented Programming (OOP)'],
+    logoType: 'generic',
+  },
   {
     id: 'claude-code-101',
     title: 'Claude Code 101',
@@ -277,10 +304,10 @@ export const skillCategories: SkillCategory[] = [
     color: 'from-amber-400 to-orange-500',
     skills: [
       { name: 'Java', level: 90, category: 'Core' },
+      { name: 'Python', level: 80, category: 'Data/AI' },
       { name: 'SQL', level: 75, category: 'Database' },
       { name: 'C++', level: 70, category: 'Core' },
       { name: 'C', level: 65, category: 'Core' },
-      { name: 'Python', level: 60, category: 'Data/AI' },
     ],
   },
   {
@@ -299,10 +326,10 @@ export const skillCategories: SkillCategory[] = [
     color: 'from-emerald-400 to-teal-500',
     skills: [
       { name: 'AI Prompting / Engineering', level: 90, category: 'AI' },
-      { name: 'AI Workflow & Agents', level: 85, category: 'AI' },
+      { name: 'Penetration Testing (Kali, Nmap, Burp)', level: 85, category: 'Security' },
       { name: 'Cybersecurity Principles', level: 80, category: 'Security' },
-      { name: 'Threat Detection & Analysis', level: 75, category: 'Security' },
-      { name: 'Operating Systems Concepts', level: 70, category: 'Systems' },
+      { name: 'Threat Detection & Wireshark', level: 75, category: 'Security' },
+      { name: 'Linux OS & Networking', level: 75, category: 'Systems' },
     ],
   },
   {
@@ -312,7 +339,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'IntelliJ IDEA & VS Code', level: 95, category: 'IDE' },
       { name: 'GitHub Copilot & Gemini', level: 95, category: 'AI Tools' },
       { name: 'Claude & ChatGPT', level: 95, category: 'AI Tools' },
-      { name: 'Perplexity & Antigravity AI', level: 90, category: 'AI Tools' },
+      { name: 'VirtualBox & Metasploitable Labs', level: 85, category: 'Dev/Sec' },
       { name: 'Git & Version Control', level: 80, category: 'DevOps' },
     ],
   },
